@@ -14,6 +14,7 @@ import { TodoContext } from "../third-provider";
 import { useRouter } from "next/navigation";
 import { getAllFTokens } from "../solana/transaction";
 import { Oval } from "react-loader-spinner";
+import { initProject } from "../solana/transaction";
 
 
 export default function Create() {
@@ -53,7 +54,8 @@ export default function Create() {
     const onCreate = async () => {
         //Check Whether NFT is selected First
 
-        // await initProject(wallet);
+        await initProject(wallet);
+        return;
 
         let error = "";
         let d = new Date(input);

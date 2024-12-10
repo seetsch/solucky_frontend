@@ -20,8 +20,8 @@ export function formatName(name: string) {
 }
 
 
-export const solConnection = new web3.Connection(clusterApiUrl("devnet"));
-// export const solConnection = new web3.Connection('https://devnet.helius-rpc.com/?api-key=67cbb36a-b35f-4c88-9240-c78a20c73f6c');
+// export const solConnection = new web3.Connection(clusterApiUrl("devnet"));
+export const solConnection = new web3.Connection('https://mainnet.helius-rpc.com/?api-key=32fd8364-9258-413a-a46b-dbe503efb094');
 
 
 // export const getNftMetaData = async (nftMintPk: PublicKey) => {
